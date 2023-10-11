@@ -59,51 +59,6 @@ def generateKBase(largeData):
 
 
 
-def generateDetails(text):
-
-    JSONFormat = {
-        "name": " ",
-        "number": 1234567890,
-        "email": " ",
-        "destination": " ",
-        "check_in_date": " ",
-        "check_out_date": " ",
-        "unique_id": "abc123"
-    }
-
-    JSONFormatPrompt = "You should extract the given details text: " + text +" into this  \n: "+ " "+ str(JSONFormat) + "\n JSON FORMAT and populatea corresponding values from text : If you couldn't find all the anser to the fileds then give '0' instead. DONOT LEAVE ANY FILED BLANK AND NO OTHER OUTPUT REQUIRED. The text is :" + text 
-    response = co.generate(
-        # text,
-        model='command-nightly',
-        prompt=JSONFormatPrompt,
-        temperature=0.3,
-        return_likelihoods =  None,
-        # finish_reason= COMPLETE,
-        # token_likelihoods= None,
-    )
-    # st.write(response.generations[0].text)
-    sendAPIReg(response.generations[0].text)
-
-
-
-def sendAPIReg(payload):
-    api_endpoint = "https://travel-llm-api.vercel.app/checkout/"
-    # Make a POST request to the API endpoint
-    response = requests.post(api_endpoint, data=payload)
-
-    # Check the status code of the response
-    if response.status_code == 200:
-        # Parse the HTML content using BeautifulSoup
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Directly open the parsed HTML content in the default web browser
-        with open("temp.html", "w", encoding="utf-8") as file:
-            file.write(str(soup))
-        webbrowser.open("temp.html")
-    else:
-        # API call failed, print the error status code and response content
-        print("API Error:", response.status_code, response.text)
-
 
 def main():
     text = """The customer wants to book a 1-bedroom suite for 2 days
