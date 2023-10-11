@@ -105,7 +105,7 @@ def on_click_callback():
                     # Add content to the sidebar
                 st.sidebar.title("Summary")
                 st.sidebar.write(summary)
-                st.write(generateDetails(summary))
+                # 
 
                 # CREATE A NLP TO EXTRACT THE DETAILS FROM THE SUMMARY
                 # llm_response.text = llm_response.text +  "  https://bento.me/aniz"

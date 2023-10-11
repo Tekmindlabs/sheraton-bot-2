@@ -3,6 +3,7 @@
 ## Overview
 
 Welcome to the Chatbot with RAG-Enabled Cohere AI Chat Endpoint project! In this project, I explore the implementation of Cohere's RAG-enabled chat endpoint to create intelligent and context-aware chat applications. This readme provides an in-depth guide on how to set up and utilize the chatbot, explaining each step and decision made along the way.
+### [Check blog to know more about Project](https://aniz.hashnode.dev/chatbot-with-rag-enabled-chat-endpoint-from-cohere-ai)
 
 ## Project Description
 
