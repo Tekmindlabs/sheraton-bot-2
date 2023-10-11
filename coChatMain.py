@@ -3,7 +3,7 @@ import streamlit as st
 from typing import Literal
 from dataclasses import dataclass
 import cohere 
-from summarization import summarizer, generateDetails
+from summarization import summarizer
 
 
 co = cohere.Client(st.secrets["COHERE_API_KEY"]) 
