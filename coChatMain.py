@@ -10,11 +10,10 @@ co = cohere.Client(st.secrets["COHERE_API_KEY"])
 
 # Streamlit header
 st.set_page_config(page_title="Co:Chat - An LLM-powered chat bot")
-st.title("Sheraton-Bot (Using cohere chat endpoint) ")
-# st.title("Booking LLM")
+st.title("Sheraton-Bot-2 (Using cohere chat endpoint) ")
 st.write("This is a chatbot for a specific Hotel (Knowledge base is limited to Sheraton Hotel and can be customized)")
 
-# laodinf styles.css
+# laoding styles.css
 def load_css():
     with open("static/styles.css", "r")  as f:
         css = f"<style>{f.read()} </style>"

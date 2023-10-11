@@ -1,10 +1,10 @@
 # Chatbot with RAG-Enabled Chat Endpoint from [Cohere AI](https://cohere.com/)  
 
-### Overview
+## Overview
 
 Welcome to the Chatbot with RAG-Enabled Cohere AI Chat Endpoint project! In this project, I explore the implementation of Cohere's RAG-enabled chat endpoint to create intelligent and context-aware chat applications. This readme provides an in-depth guide on how to set up and utilize the chatbot, explaining each step and decision made along the way.
 
-### Project Description
+## Project Description
 
 #### 1. **Introduction:**
 I embarked on this project with the goal of leveraging Cohere's cutting-edge RAG-enabled chat endpoint. This endpoint simplifies the creation of powerful and informative chatbots by incorporating Retrieval-Augmented Generation (RAG) functionality. The chatbot developed here focuses on providing information and handling inquiries related to a hotel, specifically tailored for Sheraton Hotel.
@@ -24,7 +24,7 @@ A unique feature of the chatbot is its ability to summarize conversations and di
 #### 6. **User Interface and Deployment:**
 The readme guides users on how to design the chatbot's user interface using Streamlit, explaining the callback functions and the overall structure of the interface. Additionally, instructions on deploying the chatbot using Streamlit Cloud are provided.
 
-### Project Files and Structure
+## Project Files and Structure
 
 The project files are organized as follows:
 
@@ -32,7 +32,7 @@ The project files are organized as follows:
 - **`static/styles.css`**: Custom CSS file for styling the chatbot interface.
 - **`.streamlit/config.toml`**: Configuration file enabling static serving and allowing customization of the Streamlit app.
 
-### How to Use This Project
+## How to Use This Project
 
 1. **Setting Up the Environment:**
    - Clone the repository to your local machine.
@@ -49,7 +49,7 @@ The project files are organized as follows:
 4. **Deployment:**
    - Deploy the chatbot to Streamlit Cloud or any other preferred hosting platform for wider accessibility.
 
-### Conclusion
+## Conclusion
 
 This project demonstrates the potential of Cohere's new chat endpoint and provides a foundation for building intelligent and context-aware chat applications. The provided code, explanations, and customization options offer a comprehensive guide for developers interested in creating sophisticated chatbots using Cohere's RAG functionality.
 
@@ -59,6 +59,6 @@ Feel free to explore the code, experiment with customizations, and reach out for
 
 **Author:** Aniz B N  
 **GitHub Repository:** [hotel-booking-bot](https://github.com/4N1Z/hotel-coChat-Cohere)  
-**Live Deployment:** [sheraton-bot-2](https://your-live-deployment-url.com)
+**Live Deployment:** [sheraton-bot-2](https://hotel-cochat-cohere.streamlit.app/)
 
 For inquiries and feedback, please contact me at [aniz.bn14@gmail.com](mailto:aniz.bn14@gmail.com]).
