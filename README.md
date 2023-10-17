@@ -1,4 +1,5 @@
-# Chatbot made with the RAG-Enabled Chat Endpoint from [Cohere AI](https://cohere.com/)  
+# Sheraton Bot2
+### Chatbot made with the RAG-Enabled Chat Endpoint from [Cohere AI](https://cohere.com/)  
 ![image](https://github.com/4N1Z/hotel-coChat-Cohere/assets/91843271/1cbc5498-073f-40b2-a771-7daa83b1cabd)
 
 
