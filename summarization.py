@@ -5,9 +5,9 @@ import requests
 import webbrowser
 from bs4 import BeautifulSoup
 
-co = cohere.Client('oT6jA28iJxq79ZT1ihQrDhjwCdkMsIFGfFEbX7PL') 
+ 
 
-# co = cohere.Client(os.environ["COHERE_API_KEY"]) 
+#co = cohere.Client(os.environ["COHERE_API_KEY"]) 
 def formattingForSummarizer(text):
     for each in text :
         if (each == "'") :
