@@ -5,36 +5,26 @@ import requests
 import webbrowser
 from bs4 import BeautifulSoup
 
- 
-
 #co = cohere.Client(os.environ["COHERE_API_KEY"]) 
 def formattingForSummarizer(text):
-    for each in text :
-        if (each == "'") :
-            text = text.replace(each, "")
-        if(each == "`"):
-            text = text.replace(each, "")    
-    
-    text = text.replace('\n', ' ').replace('\r', '').replace('\t', ' ')
-    return text
+    # ... existing code ...
 
-
-def summarizer (text):
-
+def summarizer(text):
     CleanText = formattingForSummarizer(str(text))
-    # prompt_template = "Summarize the given content into 5 paragraph response of `MORE THAN 200 WORDS` each. The content is : " + ' ' + CleanText 
-    summarizer_prompt  = "You are the manager of a hotel and you're task is to summarize the given content: that is the details of booking into the format needed for billing.. "
+    summarizer_prompt = "You are a customer service representative at MyVitaminStore.pk, summarize the product details for a customer inquiry:"
 
     response = co.summarize( 
           text=CleanText,
           length='long',
           format='bullets',
           model='summarize-xlarge',
-          additional_command= summarizer_prompt,
+          additional_command=summarizer_prompt,
           temperature=0.3,
         ) 
     print(response.summary)
     return response.summary
+
+# ... rest of the code remains unchanged ...
 
 def generateKBase(largeData):
 
