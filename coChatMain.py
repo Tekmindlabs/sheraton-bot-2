@@ -6,9 +6,9 @@ import cohere
 co = cohere.Client(st.secrets["COHERE_API_KEY"])
 
 # Streamlit header
-st.set_page_config(page_title="Co:Chat - An LLM-powered chat bot")
-st.title("Sheraton-Bot-2 (Using cohere chat endpoint) ")
-st.write("This is a chatbot for a specific Hotel (Knowledge base is limited to Sheraton Hotel and can be customized)")
+st.set_page_config(page_title="Product Info Bot")
+st.title("Product Info Bot (Using cohere chat endpoint)")
+st.write("This chatbot provides information about products from MyVitaminStore.pk")
 
 # Loading styles.css
 def load_css():
@@ -16,21 +16,20 @@ def load_css():
         css = f"<style>{f.read()} </style>"
         st.markdown(css, unsafe_allow_html=True)
 
-# Website-specific documents
+# Website-specific documents for MyVitaminStore.pk
 website_docs = [
     {
-        "title": "About Us",
-        "snippet": "Our hotel is located in the heart of the city, providing easy access to nearby attractions and business districts. With luxurious rooms and exceptional amenities, we strive to create a comfortable and memorable stay for our guests.",
+        "title": "Vitamin D Supplement",
+        "snippet": "Our Vitamin D supplement ensures you get your daily dose of sunshine, supporting bone health and immune function.",
     },
     {
-        "title": "Room Types",
-        "snippet": "We offer a range of room types to cater to different needs. From luxurious suites to spacious twin rooms, each accommodation is designed with comfort and convenience in mind. Our rooms feature amenities such as high-speed internet, air-conditioning, and LED TVs.",
+        "title": "Omega-3 Fish Oil",
+        "snippet": "Rich in EPA and DHA, our Omega-3 Fish Oil supports cardiovascular health and cognitive function.",
     },
-    {
-        "title": "Dining",
-        "snippet": "Our hotel boasts a variety of dining options to satisfy every craving. From our signature restaurant serving international cuisine to a cozy cafe offering light bites, guests can enjoy a diverse range of culinary experiences without leaving the premises.",
-    },
+    # Add more product descriptions here...
 ]
+
+# ... rest of the code remains unchanged ...
 
 def initialize_session_state():
     # ... (existing code for session state initialization)
